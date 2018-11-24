@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <title>Matching Game</title>
+	<meta charset='utf-8'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Coda'>
+    <link rel='stylesheet' href='css/app.css'>
+</head>
+<body>
+
+    <div class='container'>
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+		
+		<!-- score panel -->
+        <section class='score-panel'>
+			<!-- Display stars -->
+        	<ul class='stars'>
+        		<li><i class='fa fa-star star'></i></li>
+        		<li><i class='fa fa-star star'></i></li>
+        		<li><i class='fa fa-star star'></i></li>
+        	</ul>
+			
+			<!-- Display Moves -->
+        	Moves <span class='moves count'>0</span>
+			
+			<!-- Display Time -->
+			<span class='time'>Time </span>
+			<span class='displayMinutes count'>00</span>:<span class='displaySeconds count'>00</span>
+            			
+			<!-- restart button -->
+			<div class='restart'>
+        		<i class='fa fa-repeat'></i>
+        	</div>
+        </section>
+		
+		<!-- Display the cards on the page -->
+        <ul class='deck'>
+            <li class='card'>
+                <i class='fa fa-diamond'></i>
+            </li>
+            <li class='card'>
+                <i class='fa fa-paper-plane-o'></i>
+            </li>
+            <li class='card match'>
+                <i class='fa fa-anchor'></i>
+            </li>
+            <li class='card'>
+                <i class='fa fa-bolt'></i>
+            </li>
+            <li class='card'>
+                <i class='fa fa-cube'></i>
+            </li>
+            <li class='card match'>
+                <i class='fa fa-anchor'></i>
+            </li>
+            <li class='card'>
+                <i class='fa fa-leaf'></i>
+            </li>
+            <li class='card'>
+                <i class='fa fa-bicycle'></i>
+            </li>
+            <li class='card'>
+                <i class='fa fa-diamond'></i>
+            </li>
+            <li class='card'>
+                <i class='fa fa-bomb'></i>
+            </li>
+            <li class='card'>
+                <i class='fa fa-leaf'></i>
+            </li>
+            <li class='card'>
+                <i class='fa fa-bomb'></i>
+            </li>
+            <li class='card open show'>
+                <i class='fa fa-bolt'></i>
+            </li>
+            <li class='card'>
+                <i class='fa fa-bicycle'></i>
+            </li>
+            <li class='card'>
+                <i class='fa fa-paper-plane-o'></i>
+            </li>
+            <li class='card'>
+                <i class='fa fa-cube'></i>
+            </li>
+        </ul>
+    </div>
+
+	<!-- the final score message content -->
+	<div class='modal'>
+		<div class='modal-content'>
+			<h1>congratulation..</h1>
+			
+			<p>
+				<!-- display stars -->
+				<span class='star-result'></span><span class='star-result'></span><span class='star-result'></span>
+			</p>
+			
+			<p>
+				<!-- display moves and time -->
+				<span>You made </span><span class='moves-result'></span><span><span> Moves </span><br><span> IN </span><br><span class='time-result'></span>
+			</p>
+			
+			<!-- display play again button -->
+			<span class='play-again'>Play Again</span>
+		</div>
+	</div>
+
+    <script src='js/app.js'></script>
+</body>
+</html>
